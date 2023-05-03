@@ -7,3 +7,5 @@ If you successfully complete a level, you'll be awarded two Infinity Stones as y
 
 there are three levels in the game every level you are provided with a set of rules and hints follow them to win and reach next level.
 It helps to analyse memory,aptitude and vision skills.
+
+Use large screes as laptops for better experience
