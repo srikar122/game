@@ -1,0 +1,126 @@
+.game1-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background-color: #252525;
+    color: white;
+  }
+  
+  .game1-header {
+    font-size: 2rem;
+    animation: fade-in 1s ease-out forwards;
+
+  }
+  
+  .game1-content {
+    text-align: center;
+    font-size: 1.6rem;
+
+    padding: 0;
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  .game1-img {
+    margin-bottom: 0rem;
+    animation: slide-in 1s ease-out forwards;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .game1-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    animation: slide-in 1s ease-out forwards;
+  }
+  
+  .game1-ans1,
+  .game1-ans2 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  .game1-ans1:focus,
+  .game1-ans2:focus {
+    outline: none;
+    border: 2px solid #0077ff;
+    box-shadow: 0px 0px 3px #0077ff;
+  }
+  
+  .game1-count {
+    font-size: 2rem;
+    margin-top: 1rem;
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077ff;
+    color: white;
+    cursor: pointer;
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  button:hover {
+    background-color: #0055aa;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+.game1-hint{
+  mfargin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.game1-qtn{
+  display: flex;
+  flex-direction: column;
+  /* margin: 10px 150px; */
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+}
+.game1-qtn1{
+  font-size: 20px;
+
+}
+.form-content{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.game1-qtn input{
+  margin: auto;
+}

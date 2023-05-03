@@ -1,0 +1,39 @@
+.modal-content-inner{
+     display: flex;
+     /* align-items: flex-start; */
+     
+
+
+}
+.modal-outer-img{
+    width: 20vw;
+    flex: 1;
+}
+.modal-img{
+    height: 70vh;
+    width: 13vw;
+}
+.my-modal .modal-content{
+    background-color: rgb(65, 65, 91);
+    width: 60vw;
+    position: relative;
+    right: 5vw;
+    color: white;
+
+}
+.modal-title{
+    font-size: 100px;
+}
+.h4, h4{
+    font-size: 100px;
+    text-align: center;
+    margin-left: auto;
+}
+.modal-info{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.p-con{
+    font-size: 1.2rem;
+}

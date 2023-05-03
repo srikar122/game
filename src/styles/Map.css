@@ -1,0 +1,129 @@
+  /* keyframes */
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 2000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* Game container */
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #212121;
+  }
+
+  /* Avengers logo */
+  .avengers-logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
+
+  /* Levels container */
+  .levels {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  /* Level container */
+  .level {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16%;
+  }
+
+  /* Level number */
+  .level h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  /* Map container */
+  .map {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+  }
+
+  /* Dotted path */
+  .path {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .path:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background: #ffffff;
+    animation: dash 2s linear infinite;
+  }
+
+  /* Circle icon */
+  .circle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  /* Level background colors */
+  .map-level-1 {
+    background: #008000;
+  }
+
+  .map-level-2 {
+    background: #ffa500;
+  }
+
+  .map-level-3 {
+    background: #ffff00;
+  }
+
+  .map-level-4 {
+    background: #ff0000;
+  }
+
+  .map-level-5 {
+    background: #9400d3;
+  }
+
+  /* Hover effect */
+  .level:hover .circle-icon {
+    animation: none;
+    background: #212121;
+    color: #ffffff;
+  }
+
+  .level:hover .map {
+    opacity: 0.5;
+  }
+
+  .level:hover .path:before {
+    animation: none;
+    background: #212121;
+  }
